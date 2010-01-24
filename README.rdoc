@@ -8,7 +8,6 @@ To use this application, you need to do the following steps:
   gem install bundle
   git clone git://github.com/mikel/getting-started-code.git
   cd getting-started-code
-  git clone git://github.com/rails/rails.git vendor/rails
   gem bundle
   ruby script/server
 
