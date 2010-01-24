@@ -1,0 +1,17 @@
+== Getting Started Guide Code
+
+This repository holds all the code written in the Rails Guide "Getting Started"
+and is here as a reference for anyone.
+
+To use this application, you need to do the following steps:
+
+  gem install bundle
+  git clone git://github.com/mikel/getting-started-code.git
+  cd getting-started-code
+  git clone git://github.com/rails/rails.git vendor/rails
+  gem bundle
+  ruby script/server
+
+Then the web server should be running on http://127.0.0.1:3000/
+
+Enjoy
