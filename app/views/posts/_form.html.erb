@@ -1,0 +1,23 @@
+<% @post.tags.build %>
+<% form_for(@post) do |post_form| %>
+  <%= post_form.error_messages %>
+
+  <div class="field">
+    <%= post_form.label :name %><br />
+    <%= post_form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= post_form.label :title %><br />
+    <%= post_form.text_field :title %>
+  </div>
+  <div class="field">
+    <%= post_form.label :content %><br />
+    <%= post_form.text_area :content %>
+  </div>
+  <h2>Tags</h2>
+  <%= render :partial => 'tags/form',
+             :locals => {:form => post_form} %>
+  <div class="actions">
+    <%= post_form.submit %>
+  </div>
+<% end %>

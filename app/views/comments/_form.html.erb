@@ -1,0 +1,15 @@
+<% form_for([@post, @post.comments.build]) do |f| %>
+  <%= f.error_messages %>
+
+  <div class="field">
+    <%= f.label :commenter %><br />
+    <%= f.text_field :commenter %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
